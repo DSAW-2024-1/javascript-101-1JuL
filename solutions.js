@@ -11,16 +11,16 @@ function sum(a, b) {
 // Factorial of a Number
 function factorial(n) {
   // Add your code here
-  if (num < 1 || typeof num !== 'number') {
+  if (n < 1 || typeof n !== 'number') {
     console.log("Los datos de entrada no son adecuados");
-    return 1; // Devolvemos 1 para cumplir con el caso de prueba
+    return 1;
   }
-  if (num === 1) {
+  if (n === 1) {
       console.log(`El factorial de 1 es igual a 1.`);
       return 1;
   }
-  const result = num * factorial(num - 1);
-  console.log(`El factorial de ${num} es igual a ${result}.`);
+  const result = n * factorial(n - 1);
+  console.log(`El factorial de ${n} es igual a ${result}.`);
   return result;
 }
 
@@ -60,17 +60,17 @@ function countVowels(str) {
 // Check if a Number is Prime
 function isPrime(n) {
   // Add your code here
-  if (num < 1 || typeof num !== 'number') {
+  if (n < 1 || typeof n !== 'number') {
     console.log("Los datos de entrada no son adecuados");
-    return false; // Devolvemos false para cumplir con el caso de prueba
+    return false;
   }
-  for (let i = 2, s = Math.sqrt(num); i <= s; i++) {
-      if (num % i === 0) {
-          console.log(`${num} no es un número primo.`);
+  for (let i = 2, s = Math.sqrt(n); i <= s; i++) {
+      if (n % i === 0) {
+          console.log(`${n} no es un número primo.`);
           return false;
       }
   }
-  console.log(`${num} es un número primo.`);
+  console.log(`${n} es un número primo.`);
   return true;
 }
 
